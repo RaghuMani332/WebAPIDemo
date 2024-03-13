@@ -15,6 +15,7 @@ namespace WebAPIDemo.Models.Repositary.Imp
             new Shirt{ShirtId=103,Brand="OTTO",Size=12,Gender="WOMEN",Price=1200}
 
         };
+
         public List<Shirt> CreateShirt(Shirt shirt)
         {
            var a= shirts.FirstOrDefault(x => x.ShirtId == shirt.ShirtId,null);
